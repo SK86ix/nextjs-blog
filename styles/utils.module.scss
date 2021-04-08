@@ -1,0 +1,53 @@
+@mixin baseHeading($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  margin: 1rem 0;
+}
+
+@mixin boldHeading($font-size, $line-height) {
+  @include baseHeading($font-size, $line-height);
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+}
+
+.heading2X1 {
+  @include boldHeading(2.5rem, 1.2);
+}
+
+.headingX1 {
+  @include boldHeading(2rem, 1.3);
+}
+
+.headingLg {
+  @include baseHeading(1.5rem, 1.4);
+}
+
+.headingMd {
+  font-size: 1.2rem;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: #666;
+}
